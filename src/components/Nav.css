@@ -1,0 +1,109 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: black;
+    color: white;
+}
+li{
+    list-style: none;
+
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.NavBody{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    font-family: Calibri, Sans-Serif;
+
+}
+h1{
+    font-size: 1.40rem; 
+}
+
+/* This is the navigation links that show on all non-mobile screens */
+.NavLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.navLink{
+    transition: 0.4s ease;
+}
+.navLink:hover{
+    color: rgb(27, 27, 108);
+    font-size: 120%;
+}
+
+/* This is the Hamburger icon div and it's "bar" spans. */
+.HamMenu{
+    display: none;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 1.5px;
+    background-color: white;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; 
+}
+
+/* This is the menu that drops down from the hamburger icon. */
+.HamRev{
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    /* margin-block: 10px; */
+    /* padding-block: 15px; */
+    background-color: black;
+    font-family: Calibri, sans-serif;
+    font-size: 1.3rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 1s ease;
+}
+.HamRev.active{
+    display: block;
+    max-height: 300px;
+}
+.HamLinks{
+    display: block;
+    color: white;
+}
+/* Links in the hamburger menu: */
+.hamLink{
+    transition: 0.4s ease;
+    margin: 15px;
+}
+.hamLink:hover{
+    font-size: 120%;
+    color: blue;
+}
+
+/* Responsive action:
+For large-screens:  */
+@media(min-width:768px){
+    .HamMenu{
+        display: block;
+    }
+}
+/* For Mobile: */
+@media(max-width:425px){
+    .HamMenu{
+        display: block;
+    }
+    .NavLinks{
+        display: none;
+    }
+}

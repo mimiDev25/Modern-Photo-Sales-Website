@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+.foregroundTxt {
+    background-image: url("../../public/assets/landscape.jpg");
+    background-size: cover;
+    background-position: center;
+    block-size: 100%;
+    color:white;
+    padding: 20px;
+    margin-block: 50px;
+    margin-inline: 10px;
+    text-align: center;
+}

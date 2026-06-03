@@ -1,12 +1,13 @@
 import React from 'react';
+import "./About.css"
 
 
 function About() {
     return(
         <>
             <header>
-                <img src="/assets/landscape.jpg" alt="Landscape view of dandelions gone to seed in a field of green grass." width="80%"/>
-                <article>
+                 {/* <img className="mainImg" src="/assets/landscape.jpg" alt="Landscape view of dandelions gone to seed in a field of green grass." width="80%"/>  */}
+                <article className = "foregroundTxt">
                     <h2>Welcome to Verdent</h2>
                     <p>Based in the foothills of Kentucky Appalachia, <strong>Verdent Photography</strong> captures the beauty of the natural world through a lens that sees beyond the ordinary.</p>
                 </article>
@@ -15,7 +16,7 @@ function About() {
                 <section className = "about ">
                     <div className = "author">
                         <img src="/assets/author.jpg" alt="Headshot of female Verdent Photographer." width="80%"/>
-                        <h3>Meet the Photographer</h3>
+                        <h2>Meet the Photographer</h2>
                         <p>
                             <strong>Jane Doe</strong> is the founder and lead photographer at Verdent Photography. With over a decade of experience, she specializes in capturing the essence of nature and the stories that unfold within it.
                         </p>
