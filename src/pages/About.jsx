@@ -6,7 +6,7 @@ function About() {
     return(
         <>
             <header>
-                 {/* <img className="mainImg" src="/assets/landscape.jpg" alt="Landscape view of dandelions gone to seed in a field of green grass." width="80%"/>  */}
+                 <img className="mainImg" src="/assets/landscape.jpg" alt="Landscape view of dandelions gone to seed in a field of green grass." width="80%"/> 
                 <article className = "foregroundTxt">
                     <h2>Welcome to Verdent</h2>
                     <p>Based in the foothills of Kentucky Appalachia, <strong>Verdent Photography</strong> captures the beauty of the natural world through a lens that sees beyond the ordinary.</p>

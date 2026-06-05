@@ -4,7 +4,9 @@ import App from './App';
 import Gallery from './pages/Gallery';
 import Cart from './pages/Cart';
 import About from './pages/About';
+import store from './data/store.js';
 import { RouterProvider } from 'react-router-dom';
+import {Provider} from 'react-redux';
 // import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter} from 'react-router-dom';
 
@@ -18,7 +20,9 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store ={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 
