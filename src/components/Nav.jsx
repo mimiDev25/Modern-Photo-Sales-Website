@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from "react";
-import { Link } from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import "./Nav.css";
 
 function Navigation() {
@@ -9,10 +9,11 @@ function Navigation() {
     const toggleBurger=()=>{   
         setMenu(!menu);
      };
+
     return(
         <div className = "nav">
             <div className = "NavBody">
-                <div className = "HamMenu" onClick = {()=>toggleBurger()}>
+                <div className = "HamMenu" onClick = {()=>toggleBurger()} onMouseEnter={()=>toggleBurger()}>
                   <span className = "bar"></span>
                   <span className = "bar"></span>
                   <span className = "bar"></span>  
@@ -22,16 +23,16 @@ function Navigation() {
                 </div>
                 <div>
                     <ul className = "NavLinks">
-                    <li className = "navLink"><Link to={"/about"}>About</Link></li>
-                    <li className = "navLink"><Link to = {"/gallery"}>Gallery</Link></li>
-                    <li className = "navLink"><Link to={"/cart"}>Cart</Link></li>
+                    <li><NavLink to="/about" className = "navLink">About</NavLink></li>
+                    <li><NavLink to = "/gallery" className = "navLink">Gallery</NavLink></li>
+                    <li><NavLink to="/cart" className ="navLink">Cart</NavLink></li>
                     </ul> 
                 </div>
                 <div className= {(menu) ? "HamRev active" : "HamRev"}>
                     <ul className = "HamLinks">
-                    <li className = "hamLink"><Link to={"/about"}>About</Link></li>
-                    <li className = "hamLink"><Link to = {"/gallery"}>Gallery</Link></li>
-                    <li className = "hamLink"><Link to={"/cart"}>Cart</Link></li>
+                    <li className="hamL" ><NavLink to="/about" className="hamLink">About</NavLink></li>
+                    <li className="hamL"><NavLink to="/gallery" className="hamLink">Gallery</NavLink></li>
+                    <li className="hamL"><NavLink to="/cart" className="hamLink"> Cart </NavLink></li>
                     </ul> 
             </div>
         </div>

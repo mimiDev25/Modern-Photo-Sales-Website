@@ -1,10 +1,11 @@
 import React from 'react';
-import "./About.css"
-
+import "./About.css";
+import Navigation from "../components/Nav.jsx";
 
 function About() {
     return(
         <>
+            <Navigation/>
             <header>
                  <img className="mainImg" src="/assets/landscape.jpg" alt="Landscape view of dandelions gone to seed in a field of green grass." width="80%"/> 
                 <article className = "foregroundTxt">

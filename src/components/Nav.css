@@ -1,3 +1,4 @@
+@charset 'UTF-8';
 *{
     padding: 0;
     margin: 0;
@@ -38,6 +39,9 @@ h1{
 .navLink{
     transition: 0.4s ease;
 }
+.navLink.active{
+    font-weight: bolder;
+}
 .navLink:hover{
     color: rgb(27, 27, 108);
     font-size: 120%;
@@ -64,8 +68,8 @@ h1{
     left: 0;
     width: 100%;
     text-align: center;
-    /* margin-block: 10px; */
-    /* padding-block: 15px; */
+    /* margin-block: 10px; 
+    padding-block: 15px;  */
     background-color: black;
     font-family: Calibri, sans-serif;
     font-size: 1.3rem;
@@ -82,12 +86,14 @@ h1{
     color: white;
 }
 /* Links in the hamburger menu: */
-.hamLink{
-    transition: 0.4s ease;
+.hamL{
     margin: 15px;
-}
+} 
+.hamLink.active{
+    transition: 0.4s ease;
+    font-weight: bolder;
+} 
 .hamLink:hover{
-    font-size: 120%;
     color: blue;
 }
 
@@ -107,3 +113,4 @@ For large-screens:  */
         display: none;
     }
 }
+
